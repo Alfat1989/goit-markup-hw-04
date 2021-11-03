@@ -245,8 +245,28 @@ ul {
 }
 
 .advant-descript::before {
-  background-image: url(../images/icons.svg/antenna.svg);
+  display: block;
+  content: "";
+  margin-bottom: 30px;
+  height: 120px;
+
+  background-color: var(--second-bg-color);
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
+}
+
+.advant-descript:nth-child(1):before {
+  background-image: url(../images/icons.svg/antenna.svg);
+}
+.advant-descript:nth-child(2):before {
+  background-image: url(../images/icons.svg/clock.svg);
+}
+.advant-descript:nth-child(3):before {
+  background-image: url(../images/icons.svg/diagram.svg);
+}
+.advant-descript:nth-child(4):before {
+  background-image: url(../images/icons.svg/astronaut.svg);
 }
 
 .advant-descript:not(:last-child) {
@@ -341,6 +361,8 @@ ul {
   background-color: var(--bg-color);
 
   border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .comand-item:not(:nth-child(4n + 4)) {
@@ -350,6 +372,32 @@ ul {
 .item-container {
   display: block;
   padding: 30px 0;
+}
+
+.comand-list-icon {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  background-color: tomato;
+  list-style: none;
+}
+
+.comand-item-icon {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+
+.comand-item-icon:hover {
+  background-color: var(--akcent-color);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--second-text-color);
 }
 
 .section-comand .subtitle,

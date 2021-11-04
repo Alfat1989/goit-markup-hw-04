@@ -630,10 +630,26 @@ ul {
   list-style: none;
 }
 
+.portfolio-buttons {
+  border-radius: 4px;
+}
+
+.portfolio-buttons:hover,
+.portfolio-buttons:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .portfolio-items {
   padding: 0;
 
-  max-width: calc((100%-66px) / 3);
+  max-width: calc((100%-60px) / 3);
+}
+
+.portfolio-items:hover,
+.portfolio-items:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .descriopion-container {

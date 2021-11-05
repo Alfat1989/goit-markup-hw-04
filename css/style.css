@@ -128,7 +128,7 @@ ul {
 .header-links {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 
   margin-left: auto;
 }

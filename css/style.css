@@ -152,6 +152,11 @@ ul {
   margin-left: auto;
 }
 
+.header-links {
+  display: flex;
+  align-items: center;
+}
+
 .header-links .link,
 .footer-discript .link {
   color: var(--second-text-color);
@@ -160,6 +165,11 @@ ul {
 .header-links .link:hover,
 .header-links .link:focus {
   color: var(--akcent-color);
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
 }
 
 .header-link:hover .header-icon {
@@ -189,14 +199,18 @@ ul {
 }
 
 .section-hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/Img.jpg);
+  background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   text-align: center;
   padding: 200px 0px;
 }
@@ -264,6 +278,7 @@ ul {
 .svg-descript {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
   width: 270px;
   height: 120px;
@@ -271,8 +286,8 @@ ul {
 }
 
 .descript-icon {
-  padding: 0;
-  width: 65px;
+  width: 70px;
+  height: 70px;
 }
 
 /* .advant-descript::before {
@@ -402,7 +417,7 @@ ul {
 
 .item-container {
   display: block;
-  padding: 30px 0;
+  padding: 30px 32px;
 }
 
 .section-comand .subtitle,
@@ -430,7 +445,6 @@ ul {
   display: flex;
 
   margin-top: 16px;
-  padding: 0 32px;
 }
 
 .command-item-icon:not(:last-child) {
@@ -479,13 +493,13 @@ ul {
   padding: 0;
 }
 
-.clients-item {
-}
-
 .clients-link {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
-  padding: 16px 32px;
+  height: 92px;
+
   border: 1px solid var(--icn-color);
   border-radius: 4px;
 }
@@ -552,10 +566,10 @@ ul {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .join {
-  margin-top: 12px;
   margin-left: 70px;
 }
 
@@ -634,8 +648,8 @@ ul {
   border-radius: 4px;
 }
 
-.portfolio-buttons:hover,
-.portfolio-buttons:focus {
+.button:hover,
+.buttonsfocus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -646,8 +660,8 @@ ul {
   max-width: calc((100%-60px) / 3);
 }
 
-.portfolio-items:hover,
-.portfolio-items:focus {
+.portfolio:hover,
+.portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
